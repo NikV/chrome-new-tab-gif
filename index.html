@@ -1,3 +1,15 @@
+<script>
+		function randombg(){
+  var random= Math.floor(Math.random() * 6) + 0;
+  var bigSize = ["url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
+                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
+                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
+                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
+                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
+                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')"];
+  document.getElementById("random").style.backgroundImage=bigSize[random];
+}
+	</script> 
 <body onload="randombg()">
 	<div id="random" ></div>  
 	<style type="text/css">
@@ -14,17 +26,6 @@
   background-repeat: no-repeat;  
 }
     </style>
-	<script>
-		function randombg(){
-  var random= Math.floor(Math.random() * 6) + 0;
-  var bigSize = ["url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
-                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
-                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
-                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
-                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')",
-                 "url('https://media.giphy.com/media/l0MYwrMA90bl6CfyU/giphy.gif')"];
-  document.getElementById("random").style.backgroundImage=bigSize[random];
-}
-	</script> 
+	
 </body>
 <button onclick="randombg()">reload simulation</button>
